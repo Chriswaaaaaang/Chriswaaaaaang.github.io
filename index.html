@@ -6,11 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<style>
+		/* 清除默认边距，保证图片紧贴顶部 */
+		html, body, #page-wrapper, #main {
+			margin: 0;
+			padding: 0;
+		}
+
 		.hero-image {
 			width: 100%;
 			height: 66vh;
 			object-fit: cover;
+			display: block;
+			margin: 0;
 		}
+
 		.intro-text {
 			margin-top: 2em;
 			text-align: center;
@@ -20,9 +29,6 @@
 <body class="is-preload">
 
 <div id="page-wrapper">
-
-	<!-- 汉堡菜单按钮 -->
-	<a href="#sidebar" class="toggle">Menu</a>
 
 	<!-- 侧边栏 -->
 	<section id="sidebar">
@@ -50,12 +56,13 @@
 		</section>
 	</section>
 
+	<!-- 菜单按钮 -->
+	<a href="#sidebar" class="toggle">Menu</a>
+
 	<!-- 主内容区域 -->
 	<section id="main">
-		<!-- 顶部大图，可替换 -->
 		<img src="images/homepage-cover.jpg" alt="Homepage Cover" class="hero-image" />
 
-		<!-- 简介文本 -->
 		<div class="intro-text">
 			<h1>Welcome to Ziqi Wang's Portfolio</h1>
 			<p>Explore my work in Animation, UI/UX, Exhibitions, and more.</p>
@@ -64,7 +71,7 @@
 
 </div>
 
-<!-- 必要的脚本 -->
+<!-- 脚本，确保菜单交互功能正常 -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.dropotron.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
