@@ -35,12 +35,10 @@
 </head>
 <body class="is-preload">
 
+<!-- ✅ 1. 外层 wrapper 必须保留 -->
 <div id="page-wrapper">
 
-	<!-- 汉堡菜单按钮 -->
-	<a href="#sidebar" class="toggle">Menu</a>
-
-	<!-- 侧边栏 -->
+	<!-- ✅ 2. 侧边栏结构，保持完整 -->
 	<section id="sidebar">
 		<section id="intro">
 			<a href="index.html" class="logo">Ziqi Wang</a>
@@ -66,12 +64,13 @@
 		</section>
 	</section>
 
-	<!-- 主内容区域 -->
+	<!-- ✅ 3. 正确的 Menu 按钮，必须位于 sidebar 之外 -->
+	<a href="#sidebar" class="toggle">Menu</a>
+
+	<!-- ✅ 4. 主内容区域 -->
 	<section id="main">
-		<!-- 顶部大图，已链接 animate00.jpg -->
 		<img src="images/animate00.jpg" alt="Animation Cover" class="hero-image" />
 
-		<!-- 项目列表 -->
 		<div class="project-list">
 			<a href="project1.html">Project One</a>
 			<a href="project2.html">Project Two</a>
@@ -81,7 +80,7 @@
 
 </div>
 
-<!-- 必要的脚本 -->
+<!-- ✅ 5. 必须包含这些脚本，负责侧边栏交互 -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.dropotron.min.js"></script>
 <script src="assets/js/browser.min.js"></script>
